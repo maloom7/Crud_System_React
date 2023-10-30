@@ -1,3 +1,10 @@
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +42,12 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Importing font style */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* font style of main header */
+.main-header{
+  font-family: 'Montserrat', sans-serif;
 }
