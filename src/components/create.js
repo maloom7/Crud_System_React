@@ -1,6 +1,8 @@
 // import React from 'react'
 import React, { useState } from 'react';
 import { Button, Checkbox, Form } from 'semantic-ui-react'
+import axios from 'axios';
+
 
     export default function Create() {
         const [firstName, setFirstName] = useState('');
@@ -8,6 +10,12 @@ import { Button, Checkbox, Form } from 'semantic-ui-react'
         const [checkbox, setCheckbox] = useState(false);
 // sending data to the API
         const postData = () => {
+ // use Axios to send the POST request.
+            axios.post(`https://653fbb9245bedb25bfc11d93.mockapi.io/fakeData`, {
+            firstName,
+            lastName,
+            checkbox
+        })
             console.log(firstName);
             console.log(lastName);
             console.log(checkbox);
